@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>prompt 입력받은 값 합계처리</title>
+</head>
+<body>
+    <script>
+        var arr=[];
+        for(i=0; i<5; i++){
+            arr[i]=Number(prompt("값을 입력하세요"));
+            document.write("arr[" + i + "]" + ":"+ arr[i] + " <br/>");
+        }
+        function printArr(){
+            var i, sum=0;
+            for(i=0; i<arr.length; i++){
+                sum+=arr[i];
+            }
+            return sum;
+        }
+        var result=printArr(); // 함수호출
+        document.write("배열 원소 합 : " + result + "<br>"); 
+    </script>
+</body>
+</html>
+

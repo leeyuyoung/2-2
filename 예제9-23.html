@@ -1,0 +1,19 @@
+<script>
+    var day;
+    var week=new Date().getDay();
+    switch(week) {
+        case 1:
+        case 2:
+            day="htlm"; break;
+        case 3:
+        case 4:
+        day="자바"; break;
+        case 5:
+        case 6:
+        day="영어"; break;
+        case 0:
+        default:
+        day="없는 요일";
+        }
+        document.write("오늘은 <b>" + day + "</b>입니다. <p/>");
+</script>

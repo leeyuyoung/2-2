@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>input 태그실습</title> 
+</head>
+<body>
+    <form>
+        <p>이름 : <input type="text" name="name"required placeholder="이름"></p> 
+        <p>학번 : <input type="password" name="psw" required placeholder="보이지 않게"></p> 
+        <p>연락처 : <input type="text" name="phonenumber"></p> 
+        <p>주소 : <br>
+            <textarea cols="20" rows="5">주소를 입력하세요.
+            </textarea> 
+        </p>
+
+            생일 : <input type="date" name="birth" min="1990-03-01" max="2005-06-30"> <p></p>
+
+            좋아하는 색 : 
+            <input type="color" name="color_value" value="#0000F0"> 
+            <p/>
+ 
+
+        <p>기타 : <br>
+            <textarea cols="50" rows="5">기타 정보를 입력하세요.
+            </textarea> 
+        </p>
+
+            <fieldset>
+                <legend>성별</legend>
+                <input type="radio" name="sex" value="male" >남자 <input type="radio" name="sex" value="female" checked>여자
+            </fieldset>
+    
+            <fieldset>
+                <legend>취미</legend>
+                <input type="checkbox" name="hoddy" value="여행" checked>여행 <br> 
+                <input type="checkbox" name="hoddyt" value="낚시">낚시
+                <br>
+                <input type="checkbox" name="hoddyt" value="쇼핑">쇼핑
+                <br> 
+                <input type="checkbox" name="hoddy" value="스포츠">스포츠
+                <p></p>
+            </fieldset>
+
+
+
+
+            <fieldset>
+                <legend>프로그래밍 언어 및 전공 선택</legend>
+                <select name="subjects" size="5">
+                <option value="1" >C</option> 
+                <option value="2">Python</option>
+                <option value="3">Visual Basic</option> 
+                <option value="4">HTML</option>
+                <option value="5" selected>Java</option>
+                </select>
+                <p></p>
+
+                <h3>프로젝트 수행 기간</h3>
+                From : <input type="date" name="from" min="2022-10-07" max="2022-11-30"> To : <input type="date" name="to" min="2022-10-07" max="2022-11-30"> <p></p>
+
+                전공분야를 선택하세요 :              
+                <select name="major">
+                    <option value="1">Software</option> 
+                    <option value="2">Design</option>
+                    <option value="3">Math</option> 
+                    <option value="4">Computer</option>
+
+                    </select>
+            </fieldset>
+         
+    <br>
+    <input type="submit" value="전송">
+    <input type="reset" value="다시작성">
+</form>
+</body>
+</html>      

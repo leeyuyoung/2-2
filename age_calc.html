@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>버튼 함수 호출하기</title>
+    </head>
+    <body>
+        <script>
+            function printMsg(name){
+                var birth_yy = prompt("생일 년도를 입력하세요");
+                var today_yy = 2022;
+                var age = today_yy - birth_yy + 1;
+                document.write("학생이름: <b>" + name + "</b><br>")
+                document.write("학생이름: <b>" + age + "</b><br>")
+            }
+        </script>
+        <button type="button" onclick="printMsg('이유영')">학생나이 계산처리</button>
+    </body>
+</html>

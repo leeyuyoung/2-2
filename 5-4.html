@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><h3>개인 정보 입력</h3></legend>
+                <p>아이디 : <input type="text" name="id">  <input type="submit" value="ID중복검사"></p> 
+                
+                <p>생년월일 : <input type="date" name="birth" > <input type="datetime-local" name="bdaytime"></p>
+
+                <p>성별 : <input type="radio" name="sex" value="male" >남성
+                        <input type="radio" name="sex" value="female">여성</p>
+                <p>E-mail : <input type="text" name="email" placeholder="입력하세요"></p> 
+
+                <p>핸드폰 :              
+                <select name="phonenumber">
+                    <option value="1">010</option> 
+                    <option value="2">011</option>
+                    <option value="3">012</option> 
+                    </select>
+
+                - <input type="text" name="phonenumber" required> 
+                - <input type="text" name="phonenumber" required></p>
+
+                <p>메일수신 : <input type="radio" name="mailsend" value="yes" >수신동의
+                        <input type="radio" name="mailsend" value="no">수신거부</p>
+
+                <p>직업 :              
+                <select name="job" size="4" multiple>
+                    <option value="1" selected>학생</option> 
+                    <option value="2">직장인</option>
+                    <option value="3">화가</option> 
+                    <option value="4" selected>선생님</option>
+                </select></p>
+                
+                <p>취미 : <input type="checkbox" name="hoddy" value="쇼핑">쇼핑 
+                        <input type="checkbox" name="hoddy" value="인터넷">인터넷
+                        <input type="checkbox" name="hoddy" value="음악감상">음악감상
+                        <input type="checkbox" name="hoddy" value="독서">독서
+                        <input type="checkbox" name="hoddy" value="스포츠">스포츠</p>
+
+                <p>자기소개 :
+                    <textarea cols="50" rows="5">
+                    </textarea> 
+                </p>
+                <br>
+                <input type="submit" value="등록">
+                <input type="reset" value="초기화">
+        </fieldset>
+        </form>
+    </body>
+</html>      

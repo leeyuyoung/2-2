@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF=8">
+    <title>CSS position 속성연습</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            font-size: xx-large;
+            font-weight: bold;
+            background-color: skyblue;
+            border: 1px solid black;
+        }
+        div.static{
+            position: static;
+        }
+        div.relative{
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        div.fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        div.absoute{
+            position: absoute;
+            top: 100px;
+            right: 0;
+        }
+        p{
+            font-size: xx-large;
+            font-weight: bold;
+            color: gray;
+        }
+        p.sticky{
+            position: sticky;
+            top: 0;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">static</div>
+    <div class="relative">relative</div>
+    <div class="fixed">fixed</div>
+    <div class="absoute">absoute</div>
+    <br>
+    <p class="sticky">sticky</p>
+    <p>position Example</p>
+    <p>position Example</p>
+    <p>position Example</p>
+    <p>position Example</p>
+    <p>position Example</p>
+    <p>position Example</p>
+</body>
